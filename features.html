@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Details zu Chat-Erkennung, lokalem Videopuffer, Untertiteln und optionalen Uploads in Stream Clipper.">
+  <title>Funktionen - Stream Clipper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Stream Clipper</a>
+    <nav aria-label="Hauptnavigation">
+      <a href="features.html" aria-current="page">Funktionen</a>
+      <a href="how-it-works.html">So funktioniert's</a>
+      <a href="support.html">Hilfe</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="terms.html">Nutzungsbedingungen</a>
+    </nav>
+  </header>
+  <main class="site-main">
+    <section class="page-heading">
+      <p class="eyebrow">FUNKTIONEN</p>
+      <h1>Vom Chat-Moment zum bearbeitbaren Clip</h1>
+      <p class="lead">Stream Clipper verbindet Livestream-Pufferung, zeitgestempelte Chat-Aktivitaet und lokale Clip-Verarbeitung in einem Windows-Workflow.</p>
+    </section>
+
+    <section class="feature-list" aria-label="Produktfunktionen">
+      <article>
+        <h2>Streams und Chat</h2>
+        <p>Konfiguriere einen Twitch- oder YouTube-Livestream. Der Stream wird in kurze Segmente zerlegt und in einem rotierenden lokalen Puffer gehalten. Chat-Nachrichten mit Zeitstempeln koennen ueber austauschbare Anbieter eingelesen werden.</p>
+      </article>
+      <article>
+        <h2>Reaktions-Erkennung</h2>
+        <p>Der Detektor vergleicht die gewichtete Nachrichtenrate in einem gleitenden Fenster mit einer vorherigen Basisrate. Mindestanzahl von Nachrichten und eindeutigen Nutzern, Schwellwert, Emote- und Wortgewichte sowie Cooldown sind konfigurierbar. Die Erkennung bewertet Chat-Aktivitaet; sie entscheidet nicht automatisch, ob ein Videomoment lustig oder wichtig ist.</p>
+      </article>
+      <article>
+        <h2>Clips und Untertitel</h2>
+        <p>Bei einem Trigger wird ein Clip aus dem Puffer erstellt. faster-whisper erzeugt ein Transkript und Untertitel; ffmpeg rendert die konfigurierte MP4-Ausgabe mit eingebrannten Untertiteln. Das Hochformat kann fuer Kurzvideo-Plattformen verwendet werden.</p>
+      </article>
+      <article>
+        <h2>Format und Bildausschnitt</h2>
+        <p>Ausgabeformate und Abmessungen werden in der Konfiguration festgelegt. Bei Hochformat-Ausgabe kann die lokale Verarbeitung eine stabile Gesichtsposition fuer den Bildausschnitt ermitteln. Diese Analyse dient der Bildgestaltung und nicht der Identifizierung einer Person.</p>
+      </article>
+      <article>
+        <h2>Titel und Hashtags</h2>
+        <p>Ein OpenAI-kompatibler Metadatendienst kann das Clip-Transkript fuer einen kurzen Titel und Hashtags erhalten. Basis-URL, Modell und Zugangsschluessel werden lokal konfiguriert; der Schluessel gehoert nicht in den Quellcode.</p>
+      </article>
+      <article>
+        <h2>Uploads mit Nutzerkontrolle</h2>
+        <p>Der Upload-Aufbau unterstuetzt YouTube Data API v3 und TikTok Content Posting API. Je nach Einstellung werden Clips nur lokal gespeichert, einzeln zur Bestaetigung vorgelegt oder automatisch hochgeladen. Die jeweilige Plattform verlangt eine ausdrueckliche Kontoautorisierung.</p>
+      </article>
+    </section>
+
+    <section class="notice">
+      Oeffentliche Uploads koennen erst verwendet werden, wenn die Plattform-App und die betreffenden Berechtigungen genehmigt sind. Bei TikTok koennen noch nicht auditierte Apps auf private Sichtbarkeit beschraenkt sein.
+    </section>
+
+    <section class="cta">
+      <h2>Einrichtung und Bedienung</h2>
+      <p>Die Anleitung erklaert Voraussetzungen, Konfiguration und den Clip-Workflow.</p>
+      <a class="button" href="how-it-works.html">Anleitung oeffnen</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <nav aria-label="Rechtliche Informationen">
+      <a href="privacy.html">Datenschutzerklaerung</a>
+      <a href="terms.html">Nutzungsbedingungen</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </footer>
+</body>
+</html>

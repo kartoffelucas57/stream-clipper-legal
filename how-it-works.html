@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Voraussetzungen und Ablauf fuer Einrichtung und Verwendung von Stream Clipper unter Windows.">
+  <title>So funktioniert's - Stream Clipper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Stream Clipper</a>
+    <nav aria-label="Hauptnavigation">
+      <a href="features.html">Funktionen</a>
+      <a href="how-it-works.html" aria-current="page">So funktioniert's</a>
+      <a href="support.html">Hilfe</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="terms.html">Nutzungsbedingungen</a>
+    </nav>
+  </header>
+  <main class="site-main">
+    <section class="page-heading">
+      <p class="eyebrow">EINRICHTUNG</p>
+      <h1>So funktioniert Stream Clipper</h1>
+      <p class="lead">Stream Clipper laeuft lokal unter Windows. Der Betreiber waehlt die Quellen und Upload-Ziele und kann den Ablauf jederzeit stoppen.</p>
+    </section>
+
+    <section class="content-panel">
+      <h2>Voraussetzungen</h2>
+      <ul>
+        <li>Windows und Python 3.11 oder neuer.</li>
+        <li>ffmpeg sowie die installierten Python-Abhaengigkeiten.</li>
+        <li>Eine Stream- und Chat-Konfiguration fuer Twitch oder YouTube Live.</li>
+        <li>Fuer optionale Metadaten einen OpenAI-kompatiblen Endpunkt; fuer Uploads die jeweiligen offiziellen Developer-Zugangsdaten und Nutzerfreigaben.</li>
+      </ul>
+      <p>API-Schluessel und Zugangstokens werden lokal ueber eine ignorierte .env-Datei beziehungsweise lokale Token-Dateien verwaltet. Teile diese Dateien nicht und lade sie nicht in ein oeffentliches Repository hoch.</p>
+    </section>
+
+    <section class="content-panel">
+      <h2>Typischer Clip-Workflow</h2>
+      <ol class="numbered-list">
+        <li><strong>Quellen festlegen.</strong> Waehle einen einzelnen autorisierten Livestream oder eine unterstuetzte Stream-Auswahl und konfiguriere den dazu passenden Chat-Anbieter.</li>
+        <li><strong>Erkennung einstellen.</strong> Lege Chat-Zeitfenster, Basisrate, Schwellenwert, Mindestaktivitaet und Cooldown fest. Teste die Werte, bevor du den Prozess laenger laufen laesst.</li>
+        <li><strong>Ausgabe pruefen.</strong> Waehle Clip-Laenge, Format, Untertitel und Speicherort. Clips werden lokal gespeichert und koennen vor einem Upload angesehen werden.</li>
+        <li><strong>Upload-Modus waehlen.</strong> <code>dry_run</code> speichert nur lokal, <code>approval</code> verlangt eine Bestaetigung pro Clip, und <code>automatic</code> kann ohne weitere Einzelbestaetigung veroeffentlichen.</li>
+      </ol>
+    </section>
+
+    <section class="content-panel">
+      <h2>TikTok verbinden</h2>
+      <p>Der Betreiber registriert die Desktop-App im TikTok Developer Portal, hinterlegt die lokale Redirect-URI <code>http://127.0.0.1:8765/</code> und verbindet das eigene Konto ueber Login Kit. Nach der ausdruecklichen Freigabe wird der Clip ueber die Content Posting API vorbereitet und hochgeladen.</p>
+      <p>Bei der ersten App-Pruefung verlangt TikTok eine Sandbox-Demonstration. Oeffentliche Direktbeitraege erfordern ausserdem eine Genehmigung der App und der angefragten Berechtigung. Ohne diese Freigaben darf ein Test nicht als erfolgreicher oeffentlicher Upload dargestellt werden.</p>
+    </section>
+
+    <section class="notice">
+      Vor jeder Aufnahme und Veroeffentlichung muessen die Rechte an Stream, Audio, Chat-Inhalten und beteiligten Personen geklaert sein. Beachte zudem die Regeln der jeweiligen Plattform.
+    </section>
+
+    <section class="cta">
+      <h2>Fragen zur Einrichtung?</h2>
+      <p>Bei Problemen mit der Konfiguration oder beim Verbinden eines Kontos erreichst du den Support ueber die Hilfeseite.</p>
+      <a class="button" href="support.html">Support kontaktieren</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <nav aria-label="Rechtliche Informationen">
+      <a href="privacy.html">Datenschutzerklaerung</a>
+      <a href="terms.html">Nutzungsbedingungen</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </footer>
+</body>
+</html>

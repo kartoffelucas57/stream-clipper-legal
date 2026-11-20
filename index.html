@@ -3,21 +3,87 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stream Clipper</title>
+  <meta name="description" content="Stream Clipper erkennt Chat-Reaktionen in autorisierten Livestreams und bereitet untertitelte Clips fuer Creator vor.">
+  <title>Stream Clipper - Clips aus Livestream-Momenten</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <p class="eyebrow">STREAM CLIPPER</p>
-    <h1>Stream Clipper</h1>
-    <p>Stream Clipper ist ein lokal ausgefuehrtes Windows-Programm. Es kann konfigurierte Livestreams und oeffentliche Chats verarbeiten, auffaellige Chat-Reaktionen erkennen, Clips mit Untertiteln erstellen und diese auf Wunsch auf verbundenen Plattformen veroeffentlichen.</p>
-    <aside class="notice">
-      Entwurf zur Pruefung: Diese Seite und die verlinkten Rechtstexte sind noch nicht fuer die Einreichung bei TikTok freigegeben. Bitte erst nach sachlicher und rechtlicher Pruefung veroeffentlichen.
-    </aside>
+  <header class="site-header">
+    <a class="brand" href="index.html">Stream Clipper</a>
+    <nav aria-label="Hauptnavigation">
+      <a href="features.html">Funktionen</a>
+      <a href="how-it-works.html">So funktioniert's</a>
+      <a href="support.html">Hilfe</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="terms.html">Nutzungsbedingungen</a>
+    </nav>
+  </header>
+  <main class="site-main">
+    <section class="hero">
+      <p class="eyebrow">FUER STREAMER UND CREATOR</p>
+      <h1>Chat-Reaktionen erkennen. Clips einfacher vorbereiten.</h1>
+      <p class="lead">Stream Clipper ist ein Windows-Programm, das autorisierte Livestreams und oeffentliche Chats verarbeitet, auffaellige Momente als Clips vorbereitet und Creator beim Untertiteln und Veroeffentlichen unterstuetzt.</p>
+      <div class="actions">
+        <a class="button" href="how-it-works.html">Ablauf ansehen</a>
+        <a class="button secondary" href="features.html">Alle Funktionen</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="overview-title">
+      <h2 id="overview-title">Ein klarer Ablauf vom Stream zum Clip</h2>
+      <div class="card-grid">
+        <article class="card">
+          <p class="step">01</p>
+          <h3>Livestream puffern</h3>
+          <p>Ein rotierender lokaler Puffer haelt kurze Segmente eines konfigurierten Twitch- oder YouTube-Livestreams vor. Aeltere Segmente werden verworfen.</p>
+        </article>
+        <article class="card">
+          <p class="step">02</p>
+          <h3>Chat-Aktivitaet erkennen</h3>
+          <p>Ein konfigurierbares Zeitfenster vergleicht die Chat-Rate mit der vorherigen Aktivitaet. Mindestwerte und Cooldown helfen, einzelne Spam-Nachrichten nicht als Reaktion auszuloesen.</p>
+        </article>
+        <article class="card">
+          <p class="step">03</p>
+          <h3>Clip vorbereiten</h3>
+          <p>Der erkannte Zeitpunkt wird mit einem lokalen Videoclip, Transkript und eingebrannten Untertiteln verarbeitet. Titel und Hashtags koennen ueber einen konfigurierten Metadatendienst erstellt werden.</p>
+        </article>
+        <article class="card">
+          <p class="step">04</p>
+          <h3>Pruefen und teilen</h3>
+          <p>Creator koennen lokal speichern, jeden Clip vor dem Upload bestaetigen oder automatische Uploads aktivieren. TikTok und YouTube werden ueber ihre offiziellen Schnittstellen verbunden.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="split-section" aria-labelledby="control-title">
+      <div>
+        <p class="eyebrow">KONTROLLE BLEIBT BEIM CREATOR</p>
+        <h2 id="control-title">Lokal ausgefuehrt und konfigurierbar</h2>
+        <p>Stream-Clips, Transkripte, Konfiguration und Zugangstokens werden auf dem Computer des Betreibers verarbeitet beziehungsweise gespeichert. Externe Dienste werden nur entsprechend der eigenen Einrichtung und Upload-Auswahl angesprochen.</p>
+        <ul>
+          <li>Optionen fuer lokales Speichern, Freigabe vor Upload oder automatische Uploads.</li>
+          <li>Konfigurierbare Chat-Schwellenwerte, Sprachen und Clip-Formate.</li>
+          <li>Verbundene Plattformen muessen vom Nutzer autorisiert werden.</li>
+        </ul>
+      </div>
+      <aside class="notice">
+        Verwende Stream Clipper nur fuer Streams, Chat-Inhalte und Konten, fuer die du die erforderlichen Rechte und Berechtigungen hast. Pruefe jeden Clip und seine Metadaten vor der Veroeffentlichung.
+      </aside>
+    </section>
+
+    <section class="cta" aria-labelledby="start-title">
+      <h2 id="start-title">Erste Schritte</h2>
+      <p>Die Anleitung beschreibt Voraussetzungen, Einrichtung, TikTok-Verbindung und die verfuegbaren Upload-Modi.</p>
+      <a class="button" href="how-it-works.html">Zur Einrichtungsanleitung</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Stream Clipper ist ein unabhaengiges Creator-Tool und wird nicht von TikTok, YouTube, Google oder Twitch betrieben.</p>
     <nav aria-label="Rechtliche Informationen">
       <a href="privacy.html">Datenschutzerklaerung</a>
       <a href="terms.html">Nutzungsbedingungen</a>
+      <a href="support.html">Support</a>
     </nav>
-  </main>
+  </footer>
 </body>
 </html>
